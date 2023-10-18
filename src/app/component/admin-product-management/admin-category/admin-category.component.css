@@ -1,0 +1,46 @@
+li{
+    list-style: none;
+}
+
+.category{
+    left: 0;
+    background: #ffffff;
+    width: 260px;
+    height: auto;
+    display: block;
+}
+
+
+.category ul{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.category ul li{ 
+    width: auto;
+    padding: 10px 20px;
+    display: block;
+}
+
+.category ul li a{
+    font-family: Habibi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: none;   
+    color: #000; 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.category ul li img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.category ul li a span{
+    padding-top: 5px;
+}

@@ -1,0 +1,166 @@
+<p>customer-view-shopping-cart works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <app-header></app-header>
+    </div>
+    <div class="shopping-cart-header">
+        <h1 class="title"><img src="assets/image/shopping-cart-symbol.png">Giỏ hàng</h1>
+    </div>
+    <div class="container">
+        <div class="left-container">
+            <div class="block-item-in-cart">
+                <div class="title">
+                    <span>1</span>
+                    <span>Sản phẩm</span>
+                </div>
+                <div class="minicart-items-wrapper">
+                    <ol class="minicart-items">
+                        <li class="product-item">
+                            <div class="product">
+                                <span class="product-img-container">
+                                    <img src="assets/image/product12.jpg">
+                                </span>
+                                <div class="product-item-details">
+                                    <div class="product-item-name-block">
+                                        <a href="#">
+                                            <strong class="product-item-name">Fantastic Marble Shoes</strong>
+                                        </a>
+                                        <div class="product-option">Fantastic Marble Shoes</div>
+                                        <div class="product-quantity">
+                                            <app-input-quantity></app-input-quantity>
+                                        </div>
+                                    </div>
+                                    <div class="subtotal">20000đ</div>
+                                </div>
+                                <div class="delete"></div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="warning-account">
+                <h3 class="title">
+                    <span>Thông tin giao hàng</span>
+                </h3>
+                <div class="ready-have-account">
+                    <span>Bạn đã có tài khoản?</span>
+                    <a href="#">Đăng nhập ngay</a>
+                </div>
+            </div>
+            <div class="shipping-address">
+                <div class="row1">
+                    <input type="text" class="surname" placeholder="Họ">
+                    <input type="text" class="name" placeholder="Tên">
+                    <input type="text" class="mobile" placeholder="Số điện thoại">
+                </div>
+                <div class="row2">
+                    <select id="city">
+                        <option value="" selected>Chọn tỉnh thành</option>           
+                        </select>
+                        <select id="district">
+                        <option value="" selected>Chọn quận huyện</option>
+                        </select>
+                        <select id="ward">
+                        <option value="" selected>Chọn phường xã</option>
+                        </select>
+                </div>
+                <div class="row3">
+                    <input type="text" class="address" placeholder="Địa chỉ nhà">
+                    <input type="text" class="email" placeholder="Email">
+                    <input type="text" class="note" placeholder="Ghi chú đơn h">
+                </div>
+            </div>
+        </div>
+        <div class="block-summary-checkout">
+            <div class="cart-summary-coupon">
+                <div class="block-discount">
+                    <h2>MÃ COUPON ƯU ĐÃI</h2>
+                    <form class="form form-discount" id="discount-form">
+                        <div class="payment-option-inner">
+                            <div class="control">
+                                <input class="input-coupon" type="text" placeholder="Nhập mã coupon">
+                                <button class="ap-dung" type="submit">
+                                    <span>Áp dụng</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="total-cart-sumary">
+                <strong class="sumary-title">Tạm tính</strong>
+                <div class="cart-total">
+                    <table class="data table totals">
+                        <tbody>
+                            <tr class="totals sub qty">
+                                <th class="mark">
+                                    <span>Số lượng</span>
+                                </th>
+                                <td class="amount">
+                                    <span class="price" data-bind="text: getValueInclQty()">1</span>
+                                </td>
+                            </tr>
+                            <tr class="totals sub">
+                                <th class="mark">Tạm tính</th>
+                                <td class="amount">
+                                    <span class="price">412.000&nbsp;₫</span>
+                                </td>
+                            </tr>
+                            <tr class="totals shipping excl">
+                                <th class="mark">
+                                    <span class="label">Phí vận chuyển</span>
+                                </th>
+                                <td class="amount">
+                                    <span class="price">0&nbsp;₫</span>
+                                </td>
+                            </tr>
+                            <tr class="grand totals">
+                                <th class="mark">
+                                    <strong data-bind="i18n: title">Tổng cộng</strong>
+                                </th>
+                                <td class="amount">412.000&nbsp;₫</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="option-action">
+                <div class="vat-invoice">
+                    <input type="radio" id="invoice">
+                    <label for="invoice">Xuất hóa đơn công ty</label>
+                </div>
+                <div class="shipping">
+                    <input type="radio" id="ship ">
+                    <label for="ship">Giao hàng nhanh</label>
+                </div>
+                <div class="paying">
+                    <p>
+                        <input type="radio" id="pay-online">
+                        <label for="pay-online">Thanh toán bằng thẻ ATM/Visa/Master</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="pay-by-cash">
+                        <label for="pay-by-cash">Thanh toán khi nhận hàng</label>
+                    </p>
+                </div>
+                <div class="action-btn">
+                    <button class="Pay-action-btn" type="submit">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <app-footer></app-footer>
+    </div>
+</body>
+
+</html>
