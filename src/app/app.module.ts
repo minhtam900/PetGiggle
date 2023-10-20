@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './component/header/header.component';
 import { InputQuantityComponent } from './component/input-quantity/input-quantity.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { AdminCategoryComponent } from './component/admin-product-management/admin-category/admin-category.component';
 import { ProductManagementComponent } from './component/admin-product-management/product-management/product-management.component';
 import { CustomerViewHomeComponent } from './component/customer-view/customer-view-home/customer-view-home.component';
 import { CustomerViewShoppingCartComponent } from './component/customer-view/customer-view-shopping-cart/customer-view-shopping-cart.component';
@@ -16,6 +15,10 @@ import { ProductCategoryComponent } from './component/admin-product-management/p
 import { AddProductCategoryComponent } from './component/admin-product-management/add-product-category/add-product-category.component';
 import { UserManagementComponent } from './component/admin-user-management/user-management/user-management.component';
 import { AddUserComponent } from './component/admin-user-management/add-user/add-user.component';
+import { AdminViewComponent } from './component/admin-view/admin-view.component';
+import { AdminSidenavComponent } from './component/admin-view/admin-sidenav/admin-sidenav.component';
+import { AdminBodyComponent } from './component/admin-view/admin-body/admin-body.component';
+import { DashboardComponent } from './component/admin-view/dashboard/dashboard.component';
 
 
 
@@ -25,7 +28,6 @@ import { AddUserComponent } from './component/admin-user-management/add-user/add
     HeaderComponent,
     InputQuantityComponent,
     FooterComponent,
-    AdminCategoryComponent,
     ProductManagementComponent,
     CustomerViewHomeComponent,
     CustomerViewShoppingCartComponent,
@@ -34,6 +36,10 @@ import { AddUserComponent } from './component/admin-user-management/add-user/add
     AddProductCategoryComponent,
     UserManagementComponent,
     AddUserComponent,
+    AdminViewComponent,
+    AdminSidenavComponent,
+    AdminBodyComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

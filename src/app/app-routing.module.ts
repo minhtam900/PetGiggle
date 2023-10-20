@@ -5,16 +5,17 @@ import { AppComponent } from './app.component';
 import { ProductManagementComponent } from './component/admin-product-management/product-management/product-management.component';
 import { AddProductCategoryComponent } from './component/admin-product-management/add-product-category/add-product-category.component';
 import { ProductCategoryComponent } from './component/admin-product-management/product-category/product-category.component';
+import { DashboardComponent } from './component/admin-view/dashboard/dashboard.component';
 
 
 const routes: Routes=[
-  { path: 'product',  component: ProductManagementComponent},
-  { 
-    path: 'category', component: ProductCategoryComponent,
-    children: [
-      {path: 'create', component: AddProductCategoryComponent }
-    ]
-  },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  { path: 'dashboard', component: DashboardComponent},
+  { path: '', component: DashboardComponent},
+  { path: '', component: DashboardComponent},
+  { path: '', component: DashboardComponent},
+  { path: '', component: DashboardComponent},
+  { path: '', component: DashboardComponent},
 
   
     
