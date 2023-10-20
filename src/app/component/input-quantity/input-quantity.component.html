@@ -1,0 +1,5 @@
+<div class="input-quantity">
+    <button type="button" (click)="counter('minus')"><img src="assets/image/minus-icon.png"></button>
+    <input type="text" [(ngModel)]="this.count" (keypress)="OnlyNumerAllowed($event)">
+    <button type="button" (click)="counter('add')"><img src="assets/image/plus-icon.png"></button>
+</div>

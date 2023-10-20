@@ -1,0 +1,214 @@
+.header-container {
+    background: -webkit-linear-gradient(left, rgba(255, 238, 194, 1), rgba(255, 238, 194, 1), rgba(255, 0, 0, 0));
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Convergence';
+}
+
+.logo-container {
+    width: 156.98px;
+    height: 100px;
+}
+
+.logo-clickable {
+    height: 100px;
+    width: 156.98px;
+}
+
+.logo-container img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-title {
+    width: 550px;
+    height: 100px;
+    justify-content: center;
+}
+
+.menu-title ul {
+    list-style: none;
+    width: 550px;
+    height: 100px;
+    padding-inline-start: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.menu-title a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+
+    text-transform: capitalize;
+    line-height: 24px;
+    padding: 35px 15px;
+    padding-top: 35px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    padding-left: 15px;
+}
+
+ul a:hover {
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 3px palevioletred;
+}
+
+.menu-title ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.search-bar-container {
+    height: 100px;
+    padding: 0px;
+    background-image: linear-gradient(rgba(255, 238, 194, 1), rgba(255, 238, 194, 1));
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 10px;
+    border: 1px solid #cac7ff;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 5px;
+    color: #cac7ff;
+    font-size: 19px;
+    width: 300px;
+}
+
+::placeholder {
+    color: #cac7ff;
+}
+
+.search-bar button img {
+    width: 15px;
+    background-image: none;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #FFCB4A;
+    cursor: pointer;
+}
+
+.account-container {
+    width: 150px;
+    height: 100px;
+}
+
+.account-container ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.account-container img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.account-container ul {
+    list-style: none;
+    width: 150px;
+    height: 100px;
+    padding-inline-start: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+.form-popup {
+    position: absolute;
+    top: 15%;
+    right: 30%;
+    border: 3px solid #f1f1f1;
+    max-width: 500px;
+    padding: 40px;
+    background-color: white;
+}
+
+.close{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.form-popup input[type=text],
+.form-popup input[type=password] {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-popup input[type=text]:focus,
+.form-popup input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-popup .btn {
+    background-color: #000000;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-popup .cancel {
+    background-color: red;
+}
+
+.form-popup .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
