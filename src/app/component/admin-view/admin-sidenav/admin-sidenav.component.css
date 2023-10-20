@@ -1,5 +1,5 @@
 .sidenav{
-    background: #263238;
+    background: #ffffff;
     transition: all .5s ease;
     position: fixed;
     z-index: 1;
@@ -31,7 +31,7 @@
             margin-left: 1.5rem;
             font-size: 24px;
             font-weight: 700;
-            color: #fff;
+            color: #000000;
         }
 
         .btn-close{
@@ -44,7 +44,7 @@
             border: none;
 
             .fa-times{
-                color: #fff;
+                color: #000000;
                 font-size: 24px;
             }
         }
@@ -73,7 +73,7 @@
             display: flex;
             align-items: center;
             height: 3rem;
-            color: #f3f3f3;
+            color: #000000;
             text-decoration: none;
             border-radius: 0.625rem;
             transition: all .3s ease;
@@ -94,14 +94,14 @@
 
     .sidenav-nav-item:hover{
         .sidenav-nav-link{
-            background-color: #fff;
+            background-color: #FF7A00;
             color: #000;
         }
     }
 }
 
 .active{
-    background-color: #FFF;
+    background-color: #FF7A00;
 
     .sidenav-link-icon,
     .sidenav-link-text{
