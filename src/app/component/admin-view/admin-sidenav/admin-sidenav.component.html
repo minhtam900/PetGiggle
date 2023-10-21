@@ -12,7 +12,7 @@
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact:true}"
             >
-                <i class="sidenav-link-icon" [class]="data.icon"></i>
+                <fa-icon class="sidenav-link-icon" [icon] = "data.icon"></fa-icon>
                 <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>
             </a>
         </li>

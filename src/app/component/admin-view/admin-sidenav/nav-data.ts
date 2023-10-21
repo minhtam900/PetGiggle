@@ -1,42 +1,45 @@
+import { faBagShopping, faUser,faHome, faBox, faList, faGift, faMessage, faGear } from '@fortawesome/free-solid-svg-icons';
+
+
 export const  navbarData=[
     {
         routerLink: 'dashboard',
-        icon: 'fa-home',
+        icon: faHome,
         label: 'DashBoard'
     },
     {
         routerLink: 'product',
-        icon: 'fa-home',
+        icon: faBox,
         label: 'Product'
     },
     {
         routerLink: 'category',
-        icon: 'fa-home',
+        icon: faList,
         label: 'Category'
     },
     {
         routerLink: 'order',
-        icon: 'fa-home',
+        icon: faBagShopping,
         label: 'Order'
     },
     {
         routerLink: 'user',
-        icon: 'fa-home',
+        icon : faUser,
         label: 'User'
     },
     {
         routerLink: 'coupon',
-        icon: 'fa-home',
+        icon : faGift,
         label: 'Coupon'
     },
     {
         routerLink: 'message',
-        icon: 'fa-home',
+        icon : faMessage,
         label: 'Message'
     },
     {
         routerLink: 'setting',
-        icon: 'fa-home',
+        icon : faGear,
         label: 'Setting'
     },
 ];

@@ -19,7 +19,9 @@ import { AdminViewComponent } from './component/admin-view/admin-view.component'
 import { AdminSidenavComponent } from './component/admin-view/admin-sidenav/admin-sidenav.component';
 import { AdminBodyComponent } from './component/admin-view/admin-body/admin-body.component';
 import { DashboardComponent } from './component/admin-view/dashboard/dashboard.component';
-
+import { ProductListComponent } from './component/admin-view/product-management/product-list/product-list.component';
+import { ProductCategoryListComponent } from './product-category-list/product-category-list.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -40,13 +42,16 @@ import { DashboardComponent } from './component/admin-view/dashboard/dashboard.c
     AdminSidenavComponent,
     AdminBodyComponent,
     DashboardComponent,
+    ProductListComponent,
+    ProductCategoryListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
