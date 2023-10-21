@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -22,6 +22,8 @@ import { DashboardComponent } from './component/admin-view/dashboard/dashboard.c
 import { ProductListComponent } from './component/admin-view/product-management/product-list/product-list.component';
 import { ProductCategoryListComponent } from './component/admin-view/product-management/product-category-list/product-category-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProductCategoryCreateComponent } from './component/admin-view/product-management/product-category-create/product-category-create.component';
+import { AdminHeaderComponent } from './component/admin-view/admin-header/admin-header.component';
 
 
 @NgModule({
@@ -43,7 +45,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AdminBodyComponent,
     DashboardComponent,
     ProductListComponent,
-    ProductCategoryListComponent
+    ProductCategoryListComponent,
+    ProductCategoryCreateComponent,
+    AdminHeaderComponent
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   imports: [
     BrowserModule,

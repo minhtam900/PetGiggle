@@ -1,0 +1,28 @@
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-admin-header',
+  templateUrl: './admin-header.component.html',
+  styleUrls: ['./admin-header.component.css']
+})
+export class AdminHeaderComponent implements OnInit{
+
+  @Input() collapsed = false;
+  @Input() screenWidth = 0;
+
+  constructor() {}
+
+  ngOnInit(): void {
+      
+  }
+
+  getHeadClass() : string{
+    let styleClass = '';
+    if(this.collapsed && this.screenWidth > 768){
+      styleClass = 'head-trimmed';
+    } else{
+      styleClass = 'head-md-screen';
+    }
+    return styleClass;
+  }
+}
