@@ -20,7 +20,7 @@ import { AdminSidenavComponent } from './component/admin-view/admin-sidenav/admi
 import { AdminBodyComponent } from './component/admin-view/admin-body/admin-body.component';
 import { DashboardComponent } from './component/admin-view/dashboard/dashboard.component';
 import { ProductListComponent } from './component/admin-view/product-management/product-list/product-list.component';
-import { ProductCategoryListComponent } from './product-category-list/product-category-list.component';
+import { ProductCategoryListComponent } from './component/admin-view/product-management/product-category-list/product-category-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 

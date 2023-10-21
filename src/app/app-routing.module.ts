@@ -11,14 +11,13 @@ import { DashboardComponent } from './component/admin-view/dashboard/dashboard.c
 const routes: Routes=[
   { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   { path: 'dashboard', component: DashboardComponent},
-  { path: '', component: DashboardComponent},
-  { path: '', component: DashboardComponent},
-  { path: '', component: DashboardComponent},
-  { path: '', component: DashboardComponent},
-  { path: '', component: DashboardComponent},
-
-  
-    
+  { path: 'product', component: DashboardComponent},
+  { path: 'category', component: DashboardComponent},
+  { path: 'order', component: DashboardComponent},
+  { path: 'user', component: DashboardComponent},
+  { path: 'coupon', component: DashboardComponent},
+  { path: 'message', component: DashboardComponent},
+  { path: 'setting', component: DashboardComponent},
 ]
 
 @NgModule({
