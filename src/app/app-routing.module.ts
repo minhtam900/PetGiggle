@@ -6,18 +6,25 @@ import { ProductManagementComponent } from './component/admin-product-management
 import { AddProductCategoryComponent } from './component/admin-product-management/add-product-category/add-product-category.component';
 import { ProductCategoryComponent } from './component/admin-product-management/product-category/product-category.component';
 import { DashboardComponent } from './component/admin-view/dashboard/dashboard.component';
+import { ProductCategoryListComponent } from './component/admin-view/product-management/product-category-list/product-category-list.component';
+import { AdminOrderListComponent } from './component/admin-view/admin-order-list/admin-order-list.component';
+import { AdminUserListComponent } from './component/admin-view/admin-user-list/admin-user-list.component';
+import { AdminCouponListComponent } from './component/admin-view/admin-coupon-list/admin-coupon-list.component';
+import { AdminMessageComponent } from './component/admin-view/admin-message/admin-message.component';
+import { AdminSettingComponent } from './component/admin-view/admin-setting/admin-setting.component';
+import { ProductListComponent } from './component/admin-view/product-management/product-list/product-list.component';
 
 
 const routes: Routes=[
   { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   { path: 'dashboard', component: DashboardComponent},
-  { path: 'product', component: DashboardComponent},
-  { path: 'category', component: DashboardComponent},
-  { path: 'order', component: DashboardComponent},
-  { path: 'user', component: DashboardComponent},
-  { path: 'coupon', component: DashboardComponent},
-  { path: 'message', component: DashboardComponent},
-  { path: 'setting', component: DashboardComponent},
+  { path: 'product', component: ProductListComponent},
+  { path: 'category', component: ProductCategoryListComponent},
+  { path: 'order', component: AdminOrderListComponent},
+  { path: 'user', component: AdminUserListComponent},
+  { path: 'coupon', component: AdminCouponListComponent},
+  { path: 'message', component: AdminMessageComponent},
+  { path: 'setting', component: AdminSettingComponent},
 ]
 
 @NgModule({

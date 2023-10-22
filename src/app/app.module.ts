@@ -23,7 +23,11 @@ import { ProductListComponent } from './component/admin-view/product-management/
 import { ProductCategoryListComponent } from './component/admin-view/product-management/product-category-list/product-category-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductCategoryCreateComponent } from './component/admin-view/product-management/product-category-create/product-category-create.component';
-import { AdminHeaderComponent } from './component/admin-view/admin-header/admin-header.component';
+import { AdminOrderListComponent } from './component/admin-view/admin-order-list/admin-order-list.component';
+import { AdminUserListComponent } from './component/admin-view/admin-user-list/admin-user-list.component';
+import { AdminCouponListComponent } from './component/admin-view/admin-coupon-list/admin-coupon-list.component';
+import { AdminMessageComponent } from './component/admin-view/admin-message/admin-message.component';
+import { AdminSettingComponent } from './component/admin-view/admin-setting/admin-setting.component';
 
 
 @NgModule({
@@ -47,7 +51,11 @@ import { AdminHeaderComponent } from './component/admin-view/admin-header/admin-
     ProductListComponent,
     ProductCategoryListComponent,
     ProductCategoryCreateComponent,
-    AdminHeaderComponent
+    AdminOrderListComponent,
+    AdminUserListComponent,
+    AdminCouponListComponent,
+    AdminMessageComponent,
+    AdminSettingComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
