@@ -7,14 +7,8 @@
 }
 .body-container{
     width: 100%;
-    display: flex;
-    background-color: #F3F4F6;
-}
-
-.right{
-    width: 100%;
-    margin: 28px;
     display: block;
+    height: fit-content;
 }
 
 .table-cell{
@@ -23,9 +17,12 @@
 
 .text-heading{
     padding: 20px 0;
-    border-bottom: 2px dashed #a5a5a5;
     width: 100%;
     height:fit-content
+}
+
+.right{
+    width: 100%;
 }
 .right h1{
     font-size: 24px;
@@ -43,13 +40,13 @@
 }
 
 .add-category-description{
-    width: 30%;
-    padding: 0;
+    width: 40%;
+    padding: 10px;
 }
 
 .category-information{
-    width: 70%;
-    padding: 20px;
+    width: 60%;
+    padding: 30px;
     border-radius: 10px;
     border: 2px solid #CECECE;
     background: #FFF;
@@ -64,7 +61,6 @@
 
 .add-button-container{
     width: 100%;
-    position: relative;
 }
 .add-button-container button{
     padding: 0 20px;
@@ -77,6 +73,6 @@
     border-radius: 10px; 
     text-decoration-line:none ;
     position: absolute;
-    right: 0;
-    bottom: -10px;
+    bottom: -70px;
+    right: 16px;
 }

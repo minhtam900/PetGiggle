@@ -6,15 +6,9 @@
     display: flex;
 }
 
-.right{
-    width: 100%;
-    margin: 28px;
-    display: block;
-}
-
 .heading-banner {
     width: 100%;
-    padding: 32px;
+    padding: 25px;
     border-radius: 10px;
     background: #FFF;
     display: block;
@@ -29,6 +23,12 @@
 .text-heading h1{
     font-size: 24px;
     width: 20%;
+}
+
+.right{
+    width: 100%;
+    margin: 0 28px;
+    display: block;
 }
 
 .seach-bar-container{
@@ -78,7 +78,7 @@
     padding: 0;
 }
 
-.add-user{
+.add-product{
     width: 17%;
     margin-left: 3%;
     height: 100%;
@@ -94,7 +94,6 @@
     text-decoration-line:none ;
 }
 
-
 .table-container{
     margin-top: 30px;
     margin-bottom: 20px;
@@ -106,5 +105,5 @@
 }
 
 .table-cell{
-    padding: 12px;
+    padding: 20px;
 }

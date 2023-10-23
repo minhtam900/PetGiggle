@@ -7,11 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './component/header/header.component';
 import { InputQuantityComponent } from './component/input-quantity/input-quantity.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { ProductManagementComponent } from './component/admin-product-management/product-management/product-management.component';
 import { CustomerViewHomeComponent } from './component/customer-view/customer-view-home/customer-view-home.component';
 import { CustomerViewShoppingCartComponent } from './component/customer-view/customer-view-shopping-cart/customer-view-shopping-cart.component';
 import { CustomerViewProductDetailComponent } from './component/customer-view/customer-view-product-detail/customer-view-product-detail.component';
-import { UserManagementComponent } from './component/admin-user-management/user-management/user-management.component';
 import { AddUserComponent } from './component/admin-user-management/add-user/add-user.component';
 import { AdminViewComponent } from './component/admin-view/admin-view.component';
 import { AdminSidenavComponent } from './component/admin-view/admin-sidenav/admin-sidenav.component';
@@ -23,7 +21,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductCategoryCreateComponent } from './component/admin-view/product-management/product-category-create/product-category-create.component';
 import { AdminOrderListComponent } from './component/admin-view/admin-order-list/admin-order-list.component';
 import { AdminUserListComponent } from './component/admin-view/admin-user-list/admin-user-list.component';
-import { AdminCouponListComponent } from './component/admin-view/admin-coupon-list/admin-coupon-list.component';
+import { AdminCouponListComponent } from './component/admin-view/coupon-management/admin-coupon-list/admin-coupon-list.component';
 import { AdminMessageComponent } from './component/admin-view/admin-message/admin-message.component';
 import { AdminSettingComponent } from './component/admin-view/admin-setting/admin-setting.component';
 
@@ -34,11 +32,9 @@ import { AdminSettingComponent } from './component/admin-view/admin-setting/admi
     HeaderComponent,
     InputQuantityComponent,
     FooterComponent,
-    ProductManagementComponent,
     CustomerViewHomeComponent,
     CustomerViewShoppingCartComponent,
     CustomerViewProductDetailComponent,
-    UserManagementComponent,
     AddUserComponent,
     AdminViewComponent,
     AdminSidenavComponent,

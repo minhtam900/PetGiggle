@@ -6,15 +6,9 @@
     display: flex;
 }
 
-.right{
-    width: 100%;
-    margin: 28px;
-    display: block;
-}
-
 .heading-banner {
     width: 100%;
-    padding: 32px;
+    padding: 25px;
     border-radius: 10px;
     background: #FFF;
     display: block;
@@ -29,6 +23,12 @@
 .text-heading h1{
     font-size: 24px;
     width: 20%;
+}
+
+.right{
+    width: 100%;
+    margin: 0 28px;
+    display: block;
 }
 
 .seach-bar-container{
