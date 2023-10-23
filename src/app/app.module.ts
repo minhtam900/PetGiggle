@@ -4,13 +4,12 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HeaderComponent } from './component/header/header.component';
+import { HeaderComponent } from './component/customer-view/header/header.component';
 import { InputQuantityComponent } from './component/input-quantity/input-quantity.component';
-import { FooterComponent } from './component/footer/footer.component';
+import { FooterComponent } from './component/customer-view/footer/footer.component';
 import { CustomerViewHomeComponent } from './component/customer-view/customer-view-home/customer-view-home.component';
 import { CustomerViewShoppingCartComponent } from './component/customer-view/customer-view-shopping-cart/customer-view-shopping-cart.component';
 import { CustomerViewProductDetailComponent } from './component/customer-view/customer-view-product-detail/customer-view-product-detail.component';
-import { AddUserComponent } from './component/admin-user-management/add-user/add-user.component';
 import { AdminViewComponent } from './component/admin-view/admin-view.component';
 import { AdminSidenavComponent } from './component/admin-view/admin-sidenav/admin-sidenav.component';
 import { AdminBodyComponent } from './component/admin-view/admin-body/admin-body.component';
@@ -36,7 +35,6 @@ import { UserCreateComponent } from './component/admin-view/user-management/user
     CustomerViewHomeComponent,
     CustomerViewShoppingCartComponent,
     CustomerViewProductDetailComponent,
-    AddUserComponent,
     AdminViewComponent,
     AdminSidenavComponent,
     AdminBodyComponent,

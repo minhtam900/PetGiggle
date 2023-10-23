@@ -14,22 +14,16 @@ import { ProductCreateComponent } from './component/admin-view/product-managemen
 import { ProductCategoryCreateComponent } from './component/admin-view/product-management/product-category-create/product-category-create.component';
 import { UserCreateComponent } from './component/admin-view/user-management/user-create/user-create.component';
 import { LoginComponent } from './component/login/login.component';
+import { AdminViewComponent } from './component/admin-view/admin-view.component';
+import { AdminModule } from './module/admin/admin.module';
 
 
 const routes: Routes=[
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-  { path: 'dashboard', component: DashboardComponent},
-  { path: 'product', component: ProductListComponent},
-  { path: 'category', component: ProductCategoryListComponent},
-  { path: 'order', component: AdminOrderListComponent},
-  { path: 'user', component: AdminUserListComponent},
-  { path: 'coupon', component: AdminCouponListComponent},
-  { path: 'message', component: AdminMessageComponent},
-  { path: 'setting', component: AdminSettingComponent},
-  { path: 'product-create', component: ProductCreateComponent},
-  { path: 'category-create', component: ProductCategoryCreateComponent},
-  { path: 'user-create', component: UserCreateComponent},
+  //{ path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   { path: 'login', component: LoginComponent},
+  { path: 'admin', 
+  loadChildren: () => 
+    import('./module/admin/admin.module').then((m) => m.AdminModule)},
 ]
 
 @NgModule({
