@@ -40,12 +40,12 @@
     padding-bottom: 50px;
 }
 
-.add-category-description{
+.add-user-description{
     width: 30%;
     padding-right: 10px;
 }
 
-.category-information{
+.user-information{
     width: 70%;
     padding: 30px;
     border-radius: 10px;
@@ -53,7 +53,7 @@
     background: #FFF;
 }
 
-.category-information label{
+.user-information label{
     width: 100%;
     padding: 10px 0; 
     font-size: 15px;
