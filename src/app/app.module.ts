@@ -11,7 +11,6 @@ import { ProductManagementComponent } from './component/admin-product-management
 import { CustomerViewHomeComponent } from './component/customer-view/customer-view-home/customer-view-home.component';
 import { CustomerViewShoppingCartComponent } from './component/customer-view/customer-view-shopping-cart/customer-view-shopping-cart.component';
 import { CustomerViewProductDetailComponent } from './component/customer-view/customer-view-product-detail/customer-view-product-detail.component';
-import { AddProductCategoryComponent } from './component/admin-product-management/add-product-category/add-product-category.component';
 import { UserManagementComponent } from './component/admin-user-management/user-management/user-management.component';
 import { AddUserComponent } from './component/admin-user-management/add-user/add-user.component';
 import { AdminViewComponent } from './component/admin-view/admin-view.component';
@@ -39,7 +38,6 @@ import { AdminSettingComponent } from './component/admin-view/admin-setting/admi
     CustomerViewHomeComponent,
     CustomerViewShoppingCartComponent,
     CustomerViewProductDetailComponent,
-    AddProductCategoryComponent,
     UserManagementComponent,
     AddUserComponent,
     AdminViewComponent,

@@ -4,7 +4,6 @@
 .body-container{
     width: 100%;
     display: flex;
-    background-color: #F3F4F6;
 }
 
 .right{
@@ -17,7 +16,6 @@
     width: 100%;
     padding: 32px;
     border-radius: 10px;
-    border: 2px solid #CECECE;
     background: #FFF;
     display: block;
 }
