@@ -24,7 +24,8 @@ import { AdminCouponListComponent } from './component/admin-view/coupon-manageme
 import { AdminMessageComponent } from './component/admin-view/admin-message/admin-message.component';
 import { AdminSettingComponent } from './component/admin-view/admin-setting/admin-setting.component';
 import { UserCreateComponent } from './component/admin-view/user-management/user-create/user-create.component';
-
+import { LoginComponent } from './component/login/login.component';
+import { SignupComponent } from './component/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,9 @@ import { UserCreateComponent } from './component/admin-view/user-management/user
     AdminCouponListComponent,
     AdminMessageComponent,
     AdminSettingComponent,
-    UserCreateComponent
+    UserCreateComponent,
+    LoginComponent,
+    SignupComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

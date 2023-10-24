@@ -28,36 +28,14 @@
             <div class="form-popup" *ngIf="login">
                 <div class="close" (click)="closepopup()">
                     &times;
-                </div>
-                <h1>Login</h1>
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="pass"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="pass" required>
-                <div class="">
-                    <a href="" style="font-size: 14px; text-align: left;">Forgot Password?</a>
-                    <a href="" style="font-size: 14px; text-align: right;" (click)="openpopup()">Don't have account. Register here</a>
-                </div>
-                
-                <button type="submit" class="btn">Login</button>
+                  </div>
+                <app-login></app-login>
             </div>
             <div class="form-popup" *ngIf="register">
                 <div class="close" (click)="closepopup()">
                     &times;
                 </div>
-                <h1>Register</h1>
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="pass"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="pass" required>
-                <div class="">
-                    <a href="" style="font-size: 14px; text-align: left;">Forgot Password?</a>
-                    <a href="" style="font-size: 14px; text-align: right;" >Don't have account. Register here</a>
-                </div>
-                
-                <button type="submit" class="btn">Login</button>
+                <app-signup></app-signup>
             </div>
         </ul>
     </div>

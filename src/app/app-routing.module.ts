@@ -19,11 +19,15 @@ import { AdminModule } from './module/admin/admin.module';
 
 
 const routes: Routes=[
-  //{ path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   { path: 'login', component: LoginComponent},
   { path: 'admin', 
-  loadChildren: () => 
-    import('./module/admin/admin.module').then((m) => m.AdminModule)},
+    loadChildren: () => 
+      import('./module/admin/admin.module').then((m) => m.AdminModule)
+  },
+  { path: '',
+    loadChildren: () => 
+      import('./module/customer/customer.module').then((m) => m.CustomerModule)    
+  },
 ]
 
 @NgModule({
