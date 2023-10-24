@@ -26,6 +26,7 @@ import { AdminSettingComponent } from './component/admin-view/admin-setting/admi
 import { UserCreateComponent } from './component/admin-view/user-management/user-create/user-create.component';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
+import { CustomerViewShopComponent } from './component/customer-view/customer-view-shop/customer-view-shop.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { SignupComponent } from './component/signup/signup.component';
     AdminSettingComponent,
     UserCreateComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    CustomerViewShopComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

@@ -1,14 +1,14 @@
 <link href='https://fonts.googleapis.com/css?family=Convergence' rel='stylesheet'>
 <div class="header-container">
     <div class="logo-container">
-        <a class="logo-clickable" href="#">
+        <a class="logo-clickable" [routerLink]="['']">
             <img src="assets/image/logo.png">
         </a>
     </div>
     <div class="menu-title">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a [routerLink]="['']">Home</a></li>
+            <li><a [routerLink]="['/shop']">Shop</a></li>
             <li><a href="#">Pages</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact us</a></li>
